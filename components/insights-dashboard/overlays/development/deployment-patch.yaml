@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: insights-dashboard
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/ergonzale-tenant/insights-dashboard/insights-dashboard@sha256:add7180b97d8b53befa50275b14768746b9a8d8d533dfbe70dbdc7373a78b45d
+        name: my-nodejs
+        resources: {}
+status: {}
