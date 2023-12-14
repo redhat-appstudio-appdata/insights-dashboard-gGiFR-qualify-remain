@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: insights-dashboard
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/redhat-user-workloads/ergonzale-tenant/insights-dashboard/insights-dashboard@sha256:add7180b97d8b53befa50275b14768746b9a8d8d533dfbe70dbdc7373a78b45d
         name: my-nodejs
         ports:
         - containerPort: 3001
